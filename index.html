@@ -351,7 +351,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <div class="copywrite">
 		 <div class="container">		 
-				 <p>Copyright © 2015 Energy All rights reserved | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
+				 <p>Copyright © 2015 Energy All rights reserved | Design by Adeyemo</a></p>
 		</div>
 </div>
 <!---->
@@ -370,6 +370,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </script>
 <a href="#to-top" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 <!----> 
-
+<div class="language-switcher" style="text-align:center; margin:20px 0;">
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('es')">Español</button>
+</div>
 </body>
+<script>
+    const translations = {
+        en: {
+            aboutTitle: "About Us",
+            aboutText: "Nulla eget mauris quis elit mollis ornare vitae ut odio..."
+            // Add other texts you want to translate
+        },
+        es: {
+            aboutTitle: "Sobre Nosotros",
+            aboutText: "Nulla eget mauris quis elit mollis ornare vitae ut odio..."
+            // Add other texts here
+        }
+    };
+
+    function switchLanguage(lang) {
+        // Example: change About section
+        document.querySelector('#about .about-head h3').textContent = translations[lang].aboutTitle;
+        document.querySelector('#about .about-head p').textContent = translations[lang].aboutText;
+
+        // Repeat for other sections as needed
+    }
+</script>
+
 </html>
